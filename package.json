@@ -1,0 +1,37 @@
+{
+  "name": "stylelint-config-material-kit",
+  "version": "1.0.0",
+  "description": "Shareable stylelint config for Material Kit",
+  "keywords": [
+    "material-kit",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "homepage": "https://github.com/webdenim/stylelint-config-material-kit",
+  "bugs": {
+    "url": "https://github.com/webdenim/stylelint-config-material-kit/issues"
+  },
+  "license": "MIT",
+  "author": "Webdenim",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdenim/stylelint-config-material-kit.git"
+  },
+  "scripts": {
+    "release": "standard-version --tag-prefix"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-order": "^0.6.0",
+    "stylelint-scss": "^2.0.1",
+    "stylelint-selector-bem-pattern": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard-version": "^4.2.0",
+    "stylelint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^8.0.0"
+  }
+}
