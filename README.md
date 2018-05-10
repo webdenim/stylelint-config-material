@@ -1,11 +1,11 @@
-# stylelint-config-material-kit
+# stylelint-config-material
 
-Shareable stylelint config for Material Kit.
+[stylelint-config-material](https://github.com/webdenim/stylelint-config-material) is a shareable stylelint config for Material Design Components.
 
 ## Installation
 
 ```bash
-npm install --save-dev stylelint-config-material-kit
+npm install --save-dev stylelint-config-material
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ and add your [rules](https://stylelint.io/user-guide/rules) if needed.
 
 ```json
 {
-  "extends": "stylelint-config-material-kit",
+  "extends": "stylelint-config-material",
   "ignoreFiles": [
     "node_modules/**/*",
     "dist/**/*"
@@ -31,7 +31,7 @@ and add your [rules](https://stylelint.io/user-guide/rules) if needed.
 ### Example usage with YAML config:
 
 ```yaml
-extends: stylelint-config-material-kit
+extends: stylelint-config-material
 ignoreFiles:
   - node_modules/**/*
   - dist/**/*
@@ -41,27 +41,27 @@ rules:
 
 ### Using custom BEM prefix
 
-Below are example rules for using custom component prefix. Replace "mk" with your own abbreviation.
+Below are example rules for using custom component prefix. Replace "mdc" with your own abbreviation.
 
 #### In JSON config:
 
 ```json
 {
   "rules": {
-    "custom-media-pattern": "^mk?-.+",
-    "custom-property-pattern": "^mk?-.+",
-    "selector-class-pattern": ["^mk?-.+", {
+    "custom-media-pattern": "^mdc?-.+",
+    "custom-property-pattern": "^mdc?-.+",
+    "selector-class-pattern": ["^mdc?-.+", {
       "resolveNestedSelectors": true
     }],
-    "selector-id-pattern": "^mk?-.+",
+    "selector-id-pattern": "^mdc?-.+",
     "plugin/selector-bem-pattern": {
-      "componentSelectors": "^\\.mk?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\\[.+\\])*$"
+      "componentSelectors": "^\\.mdc?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\\[.+\\])*$"
     },
-    "scss/dollar-variable-pattern": ["^_?mk-.+", {
+    "scss/dollar-variable-pattern": ["^_?mdc-.+", {
       "ignore": "local"
     }],
-    "scss/at-function-pattern": "^mk-.+",
-    "scss/at-mixin-pattern": "^mk-.+"
+    "scss/at-function-pattern": "^mdc-.+",
+    "scss/at-mixin-pattern": "^mdc-.+"
   }
 }
 ```
@@ -70,17 +70,17 @@ Below are example rules for using custom component prefix. Replace "mk" with you
 
 ```yaml
 rules:
-  custom-media-pattern: ^mk?-.+
-  custom-property-pattern: ^mk?-.+
+  custom-media-pattern: ^mdc?-.+
+  custom-property-pattern: ^mdc?-.+
   selector-class-pattern:
-    - ^mk?-.+
+    - ^mdc?-.+
     - resolveNestedSelectors: true
-  selector-id-pattern: ^mk?-.+
+  selector-id-pattern: ^mdc?-.+
   plugin/selector-bem-pattern:
-    componentSelectors: ^\.mk?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$
+    componentSelectors: ^\.mdc?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$
   scss/dollar-variable-pattern:
-    - ^_?mk-.+
+    - ^_?mdc-.+
     - ignore: local
-  scss/at-function-pattern: ^mk-.+
-  scss/at-mixin-pattern: ^mk-.+
+  scss/at-function-pattern: ^mdc-.+
+  scss/at-mixin-pattern: ^mdc-.+
 ```

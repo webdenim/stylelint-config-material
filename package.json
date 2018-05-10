@@ -1,22 +1,25 @@
 {
-  "name": "stylelint-config-material-kit",
+  "name": "stylelint-config-material",
   "version": "1.0.0",
-  "description": "Shareable stylelint config for Material Kit",
+  "description": "Shareable stylelint config for Material Design Components.",
   "keywords": [
-    "material-kit",
+    "material",
+    "material-design",
+    "material-components",
+    "mdc-web",
     "stylelint",
     "stylelint-config"
   ],
-  "homepage": "https://github.com/webdenim/stylelint-config-material-kit",
+  "homepage": "https://github.com/webdenim/stylelint-config-material",
   "bugs": {
-    "url": "https://github.com/webdenim/stylelint-config-material-kit/issues"
+    "url": "https://github.com/webdenim/stylelint-config-material/issues"
   },
   "license": "MIT",
   "author": "Webdenim",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webdenim/stylelint-config-material-kit.git"
+    "url": "git+https://github.com/webdenim/stylelint-config-material.git"
   },
   "scripts": {
     "release": "standard-version --tag-prefix"

@@ -219,13 +219,13 @@ module.exports = {
       ]
     }],
     'selector-max-universal': 0,
-    // Ensure any defined symbols are prefixed with "mk-"
-    'custom-media-pattern': '^mk?-.+',
-    'custom-property-pattern': '^mk?-.+',
-    'selector-class-pattern': ['^mk?-.+', {
+    // Ensure any defined symbols are prefixed with "mdc-"
+    'custom-media-pattern': '^mdc?-.+',
+    'custom-property-pattern': '^mdc?-.+',
+    'selector-class-pattern': ['^mdc?-.+', {
       'resolveNestedSelectors': true
     }],
-    'selector-id-pattern': '^mk?-.+',
+    'selector-id-pattern': '^mdc?-.+',
     'font-weight-notation': 'numeric',
     // http://www.paulirish.com/2010/the-protocol-relative-url/
     'function-url-no-scheme-relative': true,
@@ -244,18 +244,18 @@ module.exports = {
     'plugin/selector-bem-pattern': {
       'componentName': '^[a-z]+(?:-[a-z]+)*$',
       // <namespace>-<block>__<element>*--<modifier>*[<attribute>]*
-      'componentSelectors': '^\.mk?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$',
+      'componentSelectors': '^\.mdc?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$',
       'ignoreSelectors': [
         '^fieldset',
         '^\[aria\-disabled=(?:.+)\]'
       ]
     },
 
-    'scss/dollar-variable-pattern': ['^_?mk-.+', {
+    'scss/dollar-variable-pattern': ['^_?mdc-.+', {
       'ignore': 'local'
     }],
-    'scss/at-function-pattern': '^mk-.+',
-    'scss/at-mixin-pattern': '^mk-.+',
+    'scss/at-function-pattern': '^mdc-.+',
+    'scss/at-mixin-pattern': '^mdc-.+',
     'scss/selector-no-redundant-nesting-selector': true,
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-mixin-argumentless-call-parentheses': 'never'
