@@ -1,0 +1,22 @@
+$theme-primary: #448aff;
+@import '@material/theme/mdc-theme';
+
+.mdc-block {
+  @include mdc-theme-prop(background, primary);
+  display: flex;
+  color: #FFF;
+  font-family: Roboto, Roboto Mono;
+  font-size: 0.875rem;
+  &__element {
+
+    &:after {
+      color: #ffffff;
+      content: "favorite";
+      font-family: "Material Icons";
+    }
+
+    &--modifier {
+      flex: 1
+    }
+  }
+}

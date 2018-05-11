@@ -1,0 +1,23 @@
+$mdc-theme-primary: #448aff;
+
+@import "@material/theme/mdc-theme";
+
+.mdc-block {
+  @include mdc-theme-prop(background, primary);
+
+  display: flex;
+  color: #fff;
+  font-family: Roboto, "Roboto Slab", sans-serif;
+  font-size: .875rem;
+
+  &__element {
+    &::after {
+      color: #fff;
+      content: "favorite";
+    }
+
+    &--modifier {
+      flex: 1;
+    }
+  }
+}
