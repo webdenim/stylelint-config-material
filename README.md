@@ -1,6 +1,6 @@
 # stylelint-config-material
 
-[stylelint-config-material](https://github.com/webdenim/stylelint-config-material) is a shareable stylelint config for Material Design Components.
+[stylelint-config-material](https://github.com/webdenim/stylelint-config-material) is a shareable stylelint config for [Material Components Web (**MDC Web**)](https://github.com/material-components/material-components-web).
 
 ## Installation
 
