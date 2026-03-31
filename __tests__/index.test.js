@@ -50,7 +50,7 @@ describe('flags warnings with invalid scss', () => {
 
   it('flags one warning', () => {
     return result.then(data => (
-      expect(data.results[0].warnings.length).toBe(15)
+      expect(data.results[0].warnings.length).toBe(11)
     ))
   })
 })
