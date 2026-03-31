@@ -27,22 +27,22 @@
   "scripts": {
     "lint": "stylelint __tests__/*.scss --config index.js",
     "release": "standard-version --tag-prefix",
-    "test": "jest"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
   },
   "dependencies": {
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.14.2",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "stylelint-config-standard": "^35.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.0.0",
+    "stylelint-selector-bem-pattern": "^4.0.1"
   },
   "devDependencies": {
-    "jest": "^25.1.0",
-    "jest-preset-stylelint": "^1.3.0",
-    "standard-version": "^8.0.1",
-    "stylelint": "^13.1.0"
+    "jest": "^29.7.0",
+    "jest-preset-stylelint": "^6.3.0",
+    "standard-version": "^9.5.0",
+    "stylelint": "^16.0.0"
   },
   "peerDependencies": {
-    "stylelint": ">=10.1.0"
+    "stylelint": ">=14.0.0"
   },
   "jest": {
     "preset": "jest-preset-stylelint"
