@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/webdenim/stylelint-config-material/compare/v1.0.6...v2.0.0) (2026-03-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to stylelint 16
+
+### Features
+
+* update to stylelint 16 ([3253bbc](https://github.com/webdenim/stylelint-config-material/commit/3253bbc94a41287922aa52467946c0286034b441))
+
+
+### Bug Fixes
+
+* fix tests to work with new stylelint rules ([4addcb3](https://github.com/webdenim/stylelint-config-material/commit/4addcb32ff4847be41727f5b7c23d3ca551c040d))
+
 ### [1.0.6](https://github.com/webdenim/stylelint-config-material/compare/v1.0.5...v1.0.6) (2026-03-31)
 
 ### 1.0.5 (2020-02-10)
